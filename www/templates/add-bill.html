@@ -1,0 +1,22 @@
+<ion-view view-title="Add Bill">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Bill Name" ng-model="newBill.name">
+      </label>
+      <label class="item item-input">
+        <input type="number" placeholder="Amount" ng-model="newBill.amount">
+      </label>
+      <label class="item item-input">
+        <textarea placeholder="Notes" ng-model="newBill.notes"></textarea>
+      </label>
+    </div>
+
+    <div class="padding">
+
+      <button class="button button-positive icon-left ion-plus-round" ng-click="addBill( newBill )">Add</button>
+
+    </div>
+
+  </ion-content>
+</ion-view>

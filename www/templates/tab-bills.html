@@ -1,0 +1,12 @@
+<ion-view view-title="Bills">
+  <ion-content>
+    <div class="list card" ng-repeat="bill in bills">
+      <div class="item item-divider">
+        {{ bill.name }} ${{ bill.amount }}.00
+      </div>
+      <div class="item item-body" ng-if="bill.notes">
+        {{ bill.notes }}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

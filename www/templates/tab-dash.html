@@ -1,0 +1,41 @@
+<ion-view view-title="Overview">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider bar bar-positive">
+        {{ bills.length }} BILLS DUE THIS MONTH
+      </div>
+      <div class="item item-icon-right" ng-repeat="bill in bills">
+        <p><b>{{ bill.name }}:</b> ${{ bill.amount }}.00</p>
+        <p><b>Notes:</b></p>
+        <p>{{ bill.notes }}</p>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider bar bar-assertive">
+        Total Monthly Expenses
+      </div>
+      <div class="item item-body">
+        ${{ expenses }}.00
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider bar bar-energized">
+        Your Monthly Income
+      </div>
+      <div class="item item-body">
+        <p><b>Paul:</b> $1,100</p>
+        <p><b>Tiffany:</b> $1,100</p>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider bar bar-balanced">
+        Your Monthly Savings
+      </div>
+      <div class="item item-body">
+        <p><b>Paul:</b> $200.00</p>
+        <p><b>Tiffany:</b> $300.00</p>
+      </div>
+    </div>
+    <a ng-href="#/tab/dash/add-bill" class="button icon-left ion-plus-round button-balanced material">Add Bill</a>
+  </ion-content>
+</ion-view>
